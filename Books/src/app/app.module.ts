@@ -8,6 +8,8 @@ import { HeaderComponent } from './header/header.component';
 import { RecipesComponent } from './recipes/recipes.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { NgbCarouselComponent } from './TestComponent/ngb-carousel/ngb-carousel.component';
+import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
+import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { NgbCarouselComponent } from './TestComponent/ngb-carousel/ngb-carousel.
       HeaderComponent,
       RecipesComponent,
       ShoppingListComponent,
+      RecipeItemComponent,
+      RecipeListComponent,
       NgbCarouselComponent
    ],
   imports: [
