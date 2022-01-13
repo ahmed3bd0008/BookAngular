@@ -1,2 +1,13 @@
-<app-recipe-list></app-recipe-list>
-<app-recipe-item></app-recipe-item>
+<div class="row">
+  <div class="col-lg-8 col-md-8 col-sm-12">
+    <app-recipe-list (selectRecipeDetails)="selectRecipeF($event)"></app-recipe-list>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-12">
+    <app-recipeDetails
+    *ngIf="selectRecipe;else templateName"
+    [recipe]="selectRecipe"
+    ></app-recipeDetails>
+    <ng-template #templateName>
+        <p>select recipe</p>
+    </ng-template>
+</div>

@@ -10,6 +10,9 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { NgbCarouselComponent } from './TestComponent/ngb-carousel/ngb-carousel.component';
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
+import { RecipeDetailsComponent } from './recipes/recipeDetails/recipeDetails.component';
+import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
+import { ViewChildComponent } from './TestComponent/ViewChild/ViewChild.component';
 
 @NgModule({
   declarations: [
@@ -17,9 +20,13 @@ import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component
       HeaderComponent,
       RecipesComponent,
       ShoppingListComponent,
+      ShoppingEditComponent,
       RecipeItemComponent,
+      RecipeDetailsComponent,
       RecipeListComponent,
-      NgbCarouselComponent
+      RecipeItemComponent,
+      NgbCarouselComponent,
+      ViewChildComponent,
    ],
   imports: [
     BrowserModule,
