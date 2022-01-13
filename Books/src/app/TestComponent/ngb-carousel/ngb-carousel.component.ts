@@ -15,7 +15,7 @@ export class NgbCarouselComponent implements AfterViewInit,OnInit {
   @ViewChild('ngcarousel',{static: false}) ngCarousel!: NgbCarousel;
   ngAfterViewInit(): void {
     this.stopCarousel();
-    
+
   }
   hasPriv:boolean=true;
   hasNext:boolean=false;
@@ -53,9 +53,12 @@ export class NgbCarouselComponent implements AfterViewInit,OnInit {
   // Move to previous slide
   getToPrev() {
 
-  if( this.ngCarousel.activeId=='3')
+  if( this.ngCarousel.activeId=='2')
   {
     this.hasPriv=true;
+ }else{
+  this.hasPriv=false;
+  this.hasNext=false;
  }
 
     this.ngCarousel.prev();
@@ -63,13 +66,14 @@ export class NgbCarouselComponent implements AfterViewInit,OnInit {
 
   // Move to next slide
   geToNext() {
+
     if( this.ngCarousel.activeId=='2')
   {
-
     this.hasNext=true;
   }
   else{
-    this.hasNext=false;
+    this.hasPriv=false;
+  this.hasNext=false;
   }
     this.ngCarousel.next();
   }
