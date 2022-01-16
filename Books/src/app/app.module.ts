@@ -13,6 +13,7 @@ import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component
 import { RecipeDetailsComponent } from './recipes/recipeDetails/recipeDetails.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { ViewChildComponent } from './TestComponent/ViewChild/ViewChild.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ViewChildComponent } from './TestComponent/ViewChild/ViewChild.componen
     AppRoutingModule,
     NgbModule,
     NgbPaginationModule,
-    NgbAlertModule
+    NgbAlertModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
