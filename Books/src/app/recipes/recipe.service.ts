@@ -25,4 +25,7 @@ constructor(private shopService:ShoppingService) { }
  addingredentToShop(ingredient :Ingredient[]){
    this.shopService.addIngredientFromRecipe(ingredient)
  }
+ getrecipeByIndex(index:number){
+  return this.recipes[index]
+ }
 }

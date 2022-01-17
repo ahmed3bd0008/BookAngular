@@ -14,6 +14,8 @@ import { RecipeDetailsComponent } from './recipes/recipeDetails/recipeDetails.co
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { ViewChildComponent } from './TestComponent/ViewChild/ViewChild.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { EditRecipeComponent } from './recipes/EditRecipe/EditRecipe.component';
+import { NewRecipeComponent } from './recipes/NewRecipe/NewRecipe.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { ReactiveFormsModule } from '@angular/forms';
       ShoppingListComponent,
       ShoppingEditComponent,
       RecipeItemComponent,
+      EditRecipeComponent,
+      NewRecipeComponent,
       RecipeDetailsComponent,
       RecipeListComponent,
       RecipeItemComponent,

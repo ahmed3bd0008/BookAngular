@@ -3,7 +3,7 @@
     <app-shopping-edit></app-shopping-edit>
 
   <div class="list-group mt-2" style="cursor: pointer;">
-    <a href="#" class="list-group-item list-group-item-action" aria-current="true" *ngFor="let ingredient of ingredients" >
+    <a class="list-group-item list-group-item-action" aria-current="true" *ngFor="let ingredient of ingredients" routerLinkActive="active">
       <div class="d-flex w-100 ">
         <h4 class="mb-1">{{ingredient.name}}({{ingredient.amount}})</h4>
       </div>
