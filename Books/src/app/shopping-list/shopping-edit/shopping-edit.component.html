@@ -20,8 +20,13 @@
          >
       </div>
       <div class="col-12 form-group">
-        <button type="submit" class="btn btn-success mt-2 ml-2">New</button>
-        <button type="button" class="btn btn-danger mt-2 ml-2">Delete</button>
+        <button type="submit" class="btn btn-success mt-2 ml-2">{{editMode?'Update':'Add'}}</button>
+        <button
+        type="button"
+        class="btn btn-danger mt-2 ml-2"
+        *ngIf="editMode"
+        (click)="DeleteIngredient()"
+        >Delete</button>
         <button type="button" class="btn btn-primary mt-2 ml-2">Clear</button>
       </div>
   </div>

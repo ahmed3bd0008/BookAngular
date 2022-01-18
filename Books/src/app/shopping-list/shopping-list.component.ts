@@ -10,18 +10,19 @@ import { ShoppingService } from './shopping.service';
 })
 export class ShoppingListComponent implements OnInit,OnDestroy {
  ingredients !:Ingredient[];
+ ingredient !:Ingredient;
+ editRecipeNumb!:number;
  ingredientsSub!:Subscription;
 //  =[
 //    {name:'Tomatom',amount:10},
 //    {name:'cake',amount:10}
 //   ]
   constructor(private shopeservice:ShoppingService) {
-    this.subscribeObserve();
+
    }
   ngOnDestroy(): void {
     this.ingredientsSub.unsubscribe()
   }
-
 
   ngOnInit() {
     this.ingredients=this.shopeservice.getAllIngredient();
@@ -31,6 +32,9 @@ export class ShoppingListComponent implements OnInit,OnDestroy {
    return this.shopeservice.arrayEvent.pipe().subscribe((prame:Ingredient[])=> {
       this.ingredients=prame;
   })
+}
+  Onedit(index:number){
+    this.shopeservice.updateEvent.next(index);
   }
 
 }

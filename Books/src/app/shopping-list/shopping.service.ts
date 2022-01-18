@@ -11,6 +11,7 @@ ingredients :Ingredient[]=[
   {name:'cake',amount:10}
  ]
  public arrayEvent=new Subject<Ingredient[]>();
+ public updateEvent=new Subject<number>();
  getAllIngredient(){
   //return this.ingredients.slice; lice while return cope of array when add orignal  will add bt we return the cope
   return this.ingredients.slice();
@@ -24,4 +25,15 @@ ingredients :Ingredient[]=[
    this.ingredients.push(...ingredients);
 
  }
+getIngredientByIndex(index:number){
+ return this.ingredients[index];
+}
+updateIngredient(index:number,ingredient:Ingredient){
+ this.ingredients[index]=ingredient
+ this.arrayEvent.next(this.ingredients.slice());
+}
+deleteIngredient(Index:number){
+  this.ingredients.splice(Index,1);
+  this.arrayEvent.next(this.ingredients.slice());
+}
 }

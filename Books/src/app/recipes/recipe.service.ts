@@ -1,4 +1,5 @@
 import { EventEmitter, Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 import { Ingredient } from '../Shared/model/ingredient';
 import { ShoppingService } from '../shopping-list/shopping.service';
 import { Recipe } from './recipe';
@@ -15,7 +16,7 @@ export class RecipeService {
     {name:"asmaa",discription:"new field",imagePath:"https://www.bing.com/th?id=AMMS_f39f945bd5e52d9cf88a9f562a73a10d&w=406&h=305&c=7&rs=1&qlt=80&o=6&cdv=1&pid=16.1",
     ingredient:[{name:'ice',amount:10}]},
   ]
-  recipeEventDetails=new EventEmitter<Recipe>();
+  recipeEventDetails=new Subject<Recipe>();
 constructor(private shopService:ShoppingService) { }
  getRecipe(){
    //slice Git Cope Of array if not have  prameter

@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute, Params, Router } from '@angular/router';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
+import { ActivatedRoute, Router,Params } from '@angular/router';
 import { Recipe } from '../recipe';
 import { RecipeService } from '../recipe.service';
 
@@ -8,7 +8,7 @@ import { RecipeService } from '../recipe.service';
   templateUrl: './recipeDetails.component.html',
   styleUrls: ['./recipeDetails.component.css']
 })
-export class RecipeDetailsComponent implements OnInit {
+export class RecipeDetailsComponent implements OnInit,OnDestroy {
   //delete when use rooting
  //@Input() recipe !:Recipe
  recipe !:Recipe
@@ -16,6 +16,9 @@ export class RecipeDetailsComponent implements OnInit {
   constructor(private recipeservice:RecipeService,
               private routeActive:ActivatedRoute,
               private router:Router) { }
+  ngOnDestroy(): void {
+   
+  }
 
   ngOnInit() {
     //in case route onle one في حاله لو كان الروات زرار هنضغط عليها هيروح للصفحه مش لست من ال الازرار كل ما اضغط  زرا يويني عل صفحه وبيعرضها في نفس الصفحه
@@ -33,7 +36,10 @@ export class RecipeDetailsComponent implements OnInit {
   onEditRecipe(){
   //to is correct
     //this.router.navigate(['../',this.id,'editRecipe'],{relativeTo:this.routeActive})
-   this.router.navigate(['editRecipe'],{relativeTo:this.routeActive})
+    //console.log( this.router.navigate(['editRecipe'],{relativeTo:this.routeActive}))
+   this.router.navigate(['editRecipe'],{relativeTo:this.routeActive});
+
+
   }
 
 }

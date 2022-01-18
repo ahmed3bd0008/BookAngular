@@ -20,7 +20,7 @@ export class RecipeItemComponent implements OnInit {
   // }
   onSelect(){
     //alert(this.recipe.name);
-    this.recipeservice.recipeEventDetails.emit(this.recipe);
+    this.recipeservice.recipeEventDetails.next(this.recipe);
   }
 
 }
