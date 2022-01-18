@@ -21,6 +21,9 @@ recipes!:Recipe[];
               private routeActive:ActivatedRoute) { }
 
   ngOnInit() {
+    this.recipeservice.recipeEventChange.subscribe((params:Recipe[])=>{
+      this.recipes=params;
+    })
     this.recipes=this.recipeservice.getRecipe();
   }
   onSelectItemP(recipe:Recipe){
