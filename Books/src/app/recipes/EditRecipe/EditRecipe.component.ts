@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Recipe } from '../recipe';
 import { RecipeService } from '../recipe.service';
 
@@ -14,7 +14,9 @@ export class EditRecipeComponent implements OnInit {
   recipe!:Recipe;
   updateFormGroup!:FormGroup;
   ingredentForm=new FormArray([])
-  constructor(private activeRouter:ActivatedRoute,private recipeServ:RecipeService) { }
+  constructor(private activeRouter:ActivatedRoute,
+              private recipeServ:RecipeService,
+              private router:Router) { }
 
   ngOnInit() {
     this.recipeId=   this.activeRouter.snapshot.params.id;
@@ -52,6 +54,12 @@ addFormControlIngredient(){
     })
   )
 }
+backpreviousePage(){
+ this.router.navigate(['../'],{relativeTo:this.activeRouter});
+}
+deleteingredient(controll:number){
+(<FormArray>this.updateFormGroup.get('ingredients')).removeAt(controll)
+}
 onSubmite(){
 
 this.recipeServ.EditRecipe(this.recipeId,
@@ -60,5 +68,6 @@ this.recipeServ.EditRecipe(this.recipeId,
     discription:this.updateFormGroup.value.desc,
     ingredient:this.updateFormGroup.value.ingredients
   })
+  this.backpreviousePage()
 }
 }

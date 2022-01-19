@@ -3,11 +3,6 @@
     <div class="col-12">
       <img src={{recipe.imagePath}} class="card-img-top  rounded mx-auto d-block img-thumbnail" alt="...">
     </div>
-
-
-
-
-
     <div class="col-12">
       <h1>{{recipe.name}}</h1>
     </div>
@@ -19,7 +14,7 @@
             <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
               <button ngbDropdownItem (click)="AddingredentstoShop()">Go To List</button>
               <button ngbDropdownItem (click)="onEditRecipe()">Edit Recipce</button>
-              <button ngbDropdownItem>Something else is here</button>
+              <button ngbDropdownItem (click)="deleteRecipe()">delete Recipe</button>
             </div>
           </div>
         </div>

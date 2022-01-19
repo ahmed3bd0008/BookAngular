@@ -3,7 +3,10 @@
    [formGroup]="updateFormGroup"
    (ngSubmit)="onSubmite()">
     <button type="submit" class="btn btn-secondary mx-3">update</button>
-    <button type="submit" class="btn btn-danger">Delete</button>
+    <button type="submit"
+     class="btn btn-danger"
+     (click)="backpreviousePage()"
+     >Cancel</button>
     <div class="form-floating mb-3">
       <label for="floatingInput">Name</label>
       <input
@@ -54,10 +57,14 @@
            />
          </div>
          <div class="col-1 mt-2">
-          <button class="btn btn-danger">x</button>
+          <button
+          class="btn btn-danger"
+          type="button"
+          (click)="deleteingredient(i)"
+           >x</button>
          </div>
       </div>
-      <button class="btn btn-success mt-2"
+      <button class="btn btn-success mt-2" type="button"
       (click)="addFormControlIngredient()"> add Ingredient</button>
     </div>
   </form>

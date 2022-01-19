@@ -17,7 +17,7 @@ export class RecipeDetailsComponent implements OnInit,OnDestroy {
               private routeActive:ActivatedRoute,
               private router:Router) { }
   ngOnDestroy(): void {
-   
+
   }
 
   ngOnInit() {
@@ -38,8 +38,10 @@ export class RecipeDetailsComponent implements OnInit,OnDestroy {
     //this.router.navigate(['../',this.id,'editRecipe'],{relativeTo:this.routeActive})
     //console.log( this.router.navigate(['editRecipe'],{relativeTo:this.routeActive}))
    this.router.navigate(['editRecipe'],{relativeTo:this.routeActive});
-
-
+  }
+  deleteRecipe(){
+    this.recipeservice.deleteRecipe(this.id);
+    this.router.navigate(['../'],{relativeTo:this.routeActive})
   }
 
 }

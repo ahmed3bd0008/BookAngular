@@ -35,8 +35,11 @@ constructor(private shopService:ShoppingService) { }
    this.recipeEventChange.next(this.recipes)
  }
  EditRecipe(index:number,recipe:Recipe){
-  console.log(recipe)
   this.recipes[index]=recipe;
+  this.recipeEventChange.next(this.recipes)
+ }
+ deleteRecipe(index:number){
+  this.recipes.splice(index,1);
   this.recipeEventChange.next(this.recipes)
  }
 }
