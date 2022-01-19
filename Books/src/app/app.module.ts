@@ -13,10 +13,11 @@ import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component
 import { RecipeDetailsComponent } from './recipes/recipeDetails/recipeDetails.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { ViewChildComponent } from './TestComponent/ViewChild/ViewChild.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditRecipeComponent } from './recipes/EditRecipe/EditRecipe.component';
 import { NewRecipeComponent } from './recipes/NewRecipe/NewRecipe.component';
-
+import { HttpClientFireBaseComponent } from './TestComponent/HttpClientFireBase/HttpClientFireBase.component';
+import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +33,7 @@ import { NewRecipeComponent } from './recipes/NewRecipe/NewRecipe.component';
       RecipeItemComponent,
       NgbCarouselComponent,
       ViewChildComponent,
+      HttpClientFireBaseComponent
    ],
   imports: [
     BrowserModule,
@@ -39,7 +41,9 @@ import { NewRecipeComponent } from './recipes/NewRecipe/NewRecipe.component';
     NgbModule,
     NgbPaginationModule,
     NgbAlertModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,23 @@
+<form  (ngSubmit)="onSubmite(f)" #f="ngForm">
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Title</label>
+  <input type="email" class="form-control"
+    placeholder="name@example.com" name="title"
+   #title
+   ngModel
+   required
+   >
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Containt</label>
+  <textarea class="form-control" name="content" rows="3"
+  #content
+  ngModel
+  required
+  ></textarea>
+</div>
+<button type="submit" class="btn btn-primary my-2 " >Send Post</button>
+<br/>
+<button type="button" class="btn btn-primary mx-4">feach Post</button>
+<button type="button" class="btn btn-danger mx-4">clear Post</button>
+</form>
