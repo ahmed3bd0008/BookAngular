@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Subscription } from 'rxjs';
 import{map}from'rxjs/operators'
 import { Post } from './post';
 import { PostService } from './post.service';
@@ -9,19 +10,42 @@ import { PostService } from './post.service';
   templateUrl: './HttpClientFireBase.component.html',
   styleUrls: ['./HttpClientFireBase.component.css']
 })
-export class HttpClientFireBaseComponent implements OnInit {
-  posts!:Post[];
+export class HttpClientFireBaseComponent implements OnInit,OnDestroy {
+  posts:Post[]=[];
   isFetched:boolean=false;
+  eventSubs!:Subscription;
   constructor(private http:HttpClient,private postService:PostService) { }
+  ngOnDestroy(): void {
+    this.eventSubs.unsubscribe();
+  }
  // https://angulardatabase-75e49-default-rtdb.firebaseio.com/
   ngOnInit() {
     this.fetchData()
   }
   onSubmite(f:NgForm){
-    this.postService.createPost(f.value.title,f.value.content)
+    let r: string
+    let post!:Post;
+    let key !:string
+    this.postService.createPost(f.value.title,f.value.content).subscribe(((respnse:string)=>{
+      console.log("tt")
+      this.eventSubs= this.postService.postEvent.subscribe((r:string)=>{
+        key=r;
+        console.log(key)
+        post={title:f.value.title,content:f.value.content,id:key}
+        console.log(post)
+        this.posts.push(post);
+        this.eventSubs.unsubscribe();
+       });
+    }))
+
+
+
   }
   fetchData(){
-   this.posts= this.postService.getPosts();
+   this.postService.getPosts().subscribe((Response:Post[])=>{
+     this.posts=Response;
+   })
+
   }
   private fetchAllData(){
     this.isFetched=true;
@@ -40,5 +64,13 @@ export class HttpClientFireBaseComponent implements OnInit {
      this.isFetched=false;
       console.log(response)
     }))
+  }
+  clearPost(){
+    this.postService.deletePosts().subscribe((response:Post[])=>{
+        this.posts=[];
+    })
+  }
+  UnsubscribeFun(){
+    this.eventSubs.unsubscribe();
   }
 }
