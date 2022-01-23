@@ -34,6 +34,7 @@
         <h2>{{item.title}}</h2>
         <p>{{item.content}}</p>
     </div>
+    <button type="button" class="btn btn-danger" (click)="deletePost(item.id)">x</button>
   </a>
 </div>
 <p  *ngIf="isFetched">load...</p>

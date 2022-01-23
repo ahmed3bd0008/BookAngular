@@ -23,19 +23,20 @@ export class HttpClientFireBaseComponent implements OnInit,OnDestroy {
     this.fetchData()
   }
   onSubmite(f:NgForm){
-    let r: string
     let post!:Post;
     let key !:string
     this.postService.createPost(f.value.title,f.value.content).subscribe(((respnse:string)=>{
-      console.log("tt")
-      this.eventSubs= this.postService.postEvent.subscribe((r:string)=>{
-        key=r;
-        console.log(key)
-        post={title:f.value.title,content:f.value.content,id:key}
-        console.log(post)
-        this.posts.push(post);
-        this.eventSubs.unsubscribe();
-       });
+      //console.log(respnse)
+      post={title:f.value.title,content:f.value.content,id:respnse}
+      this.posts.push(post);
+      // this.eventSubs= this.postService.postEvent.subscribe((r:string)=>{
+      //   key=r;
+      //   console.log(key)
+      //   post={title:f.value.title,content:f.value.content,id:key}
+      //   console.log(post)
+      //   this.posts.push(post);
+      //   this.eventSubs.unsubscribe();
+      // });
     }))
 
 
@@ -67,7 +68,13 @@ export class HttpClientFireBaseComponent implements OnInit,OnDestroy {
   }
   clearPost(){
     this.postService.deletePosts().subscribe((response:Post[])=>{
-        this.posts=[];
+        this.posts=response;
+    })
+  }
+  deletePost(key:string){
+    this.postService.deletePost(key).subscribe((response:Post[])=>{
+      console.log(response)
+        this.posts=response;
     })
   }
   UnsubscribeFun(){
