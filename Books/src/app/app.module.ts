@@ -17,7 +17,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditRecipeComponent } from './recipes/EditRecipe/EditRecipe.component';
 import { NewRecipeComponent } from './recipes/NewRecipe/NewRecipe.component';
 import { HttpClientFireBaseComponent } from './TestComponent/HttpClientFireBase/HttpClientFireBase.component';
-import {HttpClientModule} from '@angular/common/http';
+import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
+import { AuthInterceptorService } from './TestComponent/HttpClientFireBase/auth-interceptor.service';
+import { LogEnterceptorService } from './TestComponent/HttpClientFireBase/log-enterceptor.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +47,18 @@ import {HttpClientModule} from '@angular/common/http';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+                {
+                  provide:HTTP_INTERCEPTORS,
+                  useClass:AuthInterceptorService,
+                  multi:true
+                },
+                {
+                  provide:HTTP_INTERCEPTORS,
+                  useClass:LogEnterceptorService,
+                  multi:true,
+                }
+              ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

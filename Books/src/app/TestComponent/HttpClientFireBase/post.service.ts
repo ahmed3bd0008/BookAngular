@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { map, tap } from 'rxjs/operators';
 import { Post } from './post';
 @Injectable({
   providedIn: 'root'
@@ -34,10 +34,9 @@ getPosts(){
 }
 deletePosts(){
   return this.http.delete<Post[]>('https://angulardatabase-75e49-default-rtdb.firebaseio.com/posts.json').pipe(
-    map((response)=>{
-      const res:Post[]=[]
-      return response;
-    })
+   tap(eventresp=>{
+     console.log(eventresp);
+   })
   )
 }
 deletePost(deleteKey:string){
