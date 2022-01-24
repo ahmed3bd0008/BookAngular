@@ -18,8 +18,9 @@ import { EditRecipeComponent } from './recipes/EditRecipe/EditRecipe.component';
 import { NewRecipeComponent } from './recipes/NewRecipe/NewRecipe.component';
 import { HttpClientFireBaseComponent } from './TestComponent/HttpClientFireBase/HttpClientFireBase.component';
 import {HttpClientModule} from '@angular/common/http';
+import { AuthComponent } from './auth/auth.component';
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
       HeaderComponent,
       RecipesComponent,
@@ -33,7 +34,8 @@ import {HttpClientModule} from '@angular/common/http';
       RecipeItemComponent,
       NgbCarouselComponent,
       ViewChildComponent,
-      HttpClientFireBaseComponent
+      HttpClientFireBaseComponent,
+      AuthComponent
    ],
   imports: [
     BrowserModule,
