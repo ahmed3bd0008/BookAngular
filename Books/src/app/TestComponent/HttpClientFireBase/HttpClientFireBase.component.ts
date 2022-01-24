@@ -45,7 +45,9 @@ export class HttpClientFireBaseComponent implements OnInit,OnDestroy {
   fetchData(){
    this.postService.getPosts().subscribe((Response:Post[])=>{
      this.posts=Response;
-   })
+   },error=>{
+    console.log(error.error+"vxcvx")
+  })
 
   }
   private fetchAllData(){
@@ -64,17 +66,23 @@ export class HttpClientFireBaseComponent implements OnInit,OnDestroy {
      this.posts=response;
      this.isFetched=false;
       console.log(response)
-    }))
+    }),error=>{
+      console.log(error)
+    })
   }
   clearPost(){
     this.postService.deletePosts().subscribe((response:Post[])=>{
         this.posts=response;
+    },error=>{
+      console.log(error)
     })
   }
   deletePost(key:string){
     this.postService.deletePost(key).subscribe((response:Post[])=>{
       console.log(response)
         this.posts=response;
+    },error=>{
+      console.log(error)
     })
   }
   UnsubscribeFun(){

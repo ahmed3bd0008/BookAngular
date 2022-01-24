@@ -1,13 +1,14 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { Subject, throwError } from 'rxjs';
+import { catchError, map } from 'rxjs/operators';
 import { Post } from './post';
 @Injectable({
   providedIn: 'root'
 })
 export class PostService {
 postEvent=new Subject<string>();
+
 constructor(private http:HttpClient) { }
 
 createPost(title:string,content:string){
@@ -17,11 +18,27 @@ createPost(title:string,content:string){
   //  this.postEvent.next(res.name as string);
   //  console.log(2)
    return res.name as string;
- }))
+ }),
+ catchError(errorres=>{
+    return throwError(errorres)
+  })
+ )
 
 }
 getPosts(){
- return this.http.get<{[key:string]:Post}>('https://angulardatabase-75e49-default-rtdb.firebaseio.com/posts.json').
+ let  searchPrameter=new HttpParams();
+ //send Multi prames
+ searchPrameter= searchPrameter.append('isdffd2','3fsdfs');
+ searchPrameter=searchPrameter.append('isffsdfsafsfd3','4fsfdfs')
+ return this.http.get<{[key:string]:Post}>('https://angulardatabase-75e49-default-rtdb.firebaseio.com/posts.json',
+ {
+   headers:new HttpHeaders({"headerkey":"headervalue"}),
+   //send MultiPrames
+   params:searchPrameter
+   //if single Prameter
+  //params:new HttpParams().set('id','dsdasd')
+
+ }).
   pipe(map((responseData)=>{
     let arrayData:Post[]=[];
     for (const key in responseData) {
@@ -30,13 +47,21 @@ getPosts(){
       }
     }
    return arrayData
-  }))
+  }),catchError(errorres=>{
+    return throwError(errorres)
+  }),
+  catchError(errorres=>{
+    return throwError(errorres)
+  })
+  )
 }
 deletePosts(){
   return this.http.delete<Post[]>('https://angulardatabase-75e49-default-rtdb.firebaseio.com/posts.json').pipe(
     map((response)=>{
       const res:Post[]=[]
       return response;
+    }),catchError(errorres=>{
+      return throwError(errorres)
     })
   )
 }
@@ -45,6 +70,8 @@ deletePost(deleteKey:string){
     map((response)=>{
       const res:Post[]=[]
       return response;
+    }),catchError(errorres=>{
+      return throwError(errorres)
     })
   )
 }
