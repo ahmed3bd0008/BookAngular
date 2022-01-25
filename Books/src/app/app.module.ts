@@ -21,9 +21,11 @@ import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import { AuthInterceptorService } from './TestComponent/HttpClientFireBase/auth-interceptor.service';
 import { LogEnterceptorService } from './TestComponent/HttpClientFireBase/log-enterceptor.service';
 import { AuthComponent } from './auth/auth.component';
-
+import { PipeComponent } from './TestComponent/pipe/pipe.component';
+import { ShortStringpipeService } from './TestComponent/pipe/ShortString.pipe.service';
 @NgModule({
   declarations: [
+    ShortStringpipeService,
     AppComponent,
       HeaderComponent,
       RecipesComponent,
@@ -38,7 +40,8 @@ import { AuthComponent } from './auth/auth.component';
       NgbCarouselComponent,
       ViewChildComponent,
       HttpClientFireBaseComponent,
-     AuthComponent
+     AuthComponent,
+     PipeComponent
    ],
   imports: [
     BrowserModule,

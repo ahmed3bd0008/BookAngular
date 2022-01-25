@@ -80,11 +80,7 @@ export class HttpClientFireBaseComponent implements OnInit,OnDestroy {
   deletePost(key:string){
     this.postService.deletePost(key).subscribe((response:Post[])=>{
       console.log(response)
-
-        this.posts=[];
-
-        this.posts=response;
-   
+        this.posts.splice(0,this.posts.length);
     })
   }
   UnsubscribeFun(){

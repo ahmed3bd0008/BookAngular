@@ -76,7 +76,7 @@ deletePost(deleteKey:string){
   return this.http.delete<Post[]>('https://angulardatabase-75e49-default-rtdb.firebaseio.com/posts.json'+deleteKey).pipe(
     map((response)=>{
       const res:Post[]=[]
-      return response;
+      return res;
     }),catchError(errorres=>{
       return throwError(errorres)
     })
