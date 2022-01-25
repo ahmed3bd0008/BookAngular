@@ -20,6 +20,8 @@ import { HttpClientFireBaseComponent } from './TestComponent/HttpClientFireBase/
 import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import { AuthInterceptorService } from './TestComponent/HttpClientFireBase/auth-interceptor.service';
 import { LogEnterceptorService } from './TestComponent/HttpClientFireBase/log-enterceptor.service';
+import { AuthComponent } from './auth/auth.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +37,8 @@ import { LogEnterceptorService } from './TestComponent/HttpClientFireBase/log-en
       RecipeItemComponent,
       NgbCarouselComponent,
       ViewChildComponent,
-      HttpClientFireBaseComponent
+      HttpClientFireBaseComponent,
+     AuthComponent
    ],
   imports: [
     BrowserModule,
