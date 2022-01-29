@@ -31,6 +31,7 @@ constructor(private shopService:ShoppingService) { }
   return this.recipes[index]
  }
  addRecipe(recipe:Recipe){
+   recipe.ingredient?recipe.ingredient:[];
    this.recipes.push(recipe)
    this.recipeEventChange.next(this.recipes)
  }
@@ -41,5 +42,9 @@ constructor(private shopService:ShoppingService) { }
  deleteRecipe(index:number){
   this.recipes.splice(index,1);
   this.recipeEventChange.next(this.recipes)
+ }
+ setRecipe(recipes:Recipe[]){
+   this.recipes=recipes;
+   this.recipeEventChange.next(this.recipes)
  }
 }
