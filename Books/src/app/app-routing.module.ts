@@ -7,6 +7,8 @@ import { RecipeDetailsComponent } from './recipes/recipeDetails/recipeDetails.co
 import { RecipesComponent } from './recipes/recipes.component';
 import { StartComponent } from './recipes/start/start.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+import { SendMessageEmailsComponent } from './TestComponent/sendEmails/Send-message-emails/Send-message-emails.component';
+import { SendEmailsComponent } from './TestComponent/sendEmails/sendEmails.component';
 //must order the route
 const routes: Routes = [
   {path:'',redirectTo:'/repices',pathMatch:'full'},
@@ -18,6 +20,8 @@ const routes: Routes = [
   ]},
   {path:'shop-list',component:ShoppingListComponent},
   {path:'auth',component:AuthComponent},
+  {path:'sendemail',component:SendEmailsComponent},
+  {path:'SendMessage',component:SendMessageEmailsComponent}
 ];
 
 @NgModule({

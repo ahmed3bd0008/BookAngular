@@ -23,10 +23,13 @@ import { LogEnterceptorService } from './TestComponent/HttpClientFireBase/log-en
 import { AuthComponent } from './auth/auth.component';
 import { PipeComponent } from './TestComponent/pipe/pipe.component';
 import { ShortStringpipeService } from './TestComponent/pipe/ShortString.pipe.service';
+import { SendEmailsModule } from './TestComponent/sendEmails/sendEmails.module';
+
+
 @NgModule({
   declarations: [
     ShortStringpipeService,
-    AppComponent,
+      AppComponent,
       HeaderComponent,
       RecipesComponent,
       ShoppingListComponent,
@@ -41,7 +44,8 @@ import { ShortStringpipeService } from './TestComponent/pipe/ShortString.pipe.se
       ViewChildComponent,
       HttpClientFireBaseComponent,
      AuthComponent,
-     PipeComponent
+     PipeComponent,
+
    ],
   imports: [
     BrowserModule,
@@ -51,7 +55,9 @@ import { ShortStringpipeService } from './TestComponent/pipe/ShortString.pipe.se
     NgbAlertModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+   SendEmailsModule
+
   ],
   providers: [
                 {
