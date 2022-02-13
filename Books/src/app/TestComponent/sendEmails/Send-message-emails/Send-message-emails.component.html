@@ -1,33 +1,33 @@
 <div class="container">
-  <form  [formGroup]="sendEmail">
+  <form  [formGroup]="sendEmail" (ngSubmit)="onSubMite()">
     <div class="row">
       <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
       <div class="col-sm-10">
         <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg"
           formControlName="email"
+
         >
       </div>
       <button type="button" class="btn btn-secondary" (click)="addEmail()">add email</button>
       <div *ngIf="emails.length>=0">
-        <label *ngFor="let email of emails let i=index" class="btn btn-primary mx-3" >
+        <label *ngFor="let email of emails let i=index" class="btn btn-primary mx-3"  (click)="editEmail(i)" >
          {{email}}  <span class="badge bg-danger" (click)="deleteEmail(i)">x</span>
 
         </label>
       </div>
     </div>
     <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"
-        formControlName="massage"
-        [disabled]="true"
-      >
+      <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+      <input class="form-control" id="exampleFormControlTextarea1"
+        formControlName="subject"
+      />
     </div>
     <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-        formControlName="subject"
-        [disabled]="true"
-      ></textarea>
+      <label for="message" class="form-label">Email address</label>
+      <textarea type="text" class="form-control" id="message" placeholder="" rows="3"
+        formControlName="massage"
+      >
+      </textarea>
     </div>
     <button class="btn btn-success">send Message</button>
   </form>

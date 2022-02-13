@@ -9,9 +9,7 @@ import { Massage } from '../../Model/massage';
 export class MessageComponent implements OnInit {
 @Input() message!:Massage;
   constructor() { }
-
-  ngOnInit() {
+  ngOnInit(): void {
     console.log(this.message)
   }
- 
 }
