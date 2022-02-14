@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kUaj780nf7qLa8JzjI1/CQ19uYD3smxygOWYMZO8rOYeaKcp/qzMGCtELl2l9lCpqeNSLlPY01svD6iwRuvdeA==",
+  "dgSpecHash": "wxeAdP2h/1BfOamtOEOro2e9MgpShzdMlUX5DSqs1u55/HbHD9e1oxbyQnsnt2667ycWBHr/xgnnwohhqoheaw==",
   "success": true,
-  "projectFilePath": "G:\\Angular\\BookAngular\\Api\\Api.csproj",
+  "projectFilePath": "G:\\Angular\\BookAngular\\Back\\Api\\Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aalwa\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\aalwa\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

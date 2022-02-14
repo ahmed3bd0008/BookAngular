@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Angular\\BookAngular\\Api\\Api.csproj": {}
+    "G:\\Angular\\BookAngular\\Back\\Repository\\Repository.csproj": {}
   },
   "projects": {
-    "G:\\Angular\\BookAngular\\Api\\Api.csproj": {
+    "G:\\Angular\\BookAngular\\Back\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Angular\\BookAngular\\Api\\Api.csproj",
-        "projectName": "Api",
-        "projectPath": "G:\\Angular\\BookAngular\\Api\\Api.csproj",
+        "projectUniqueName": "G:\\Angular\\BookAngular\\Back\\Repository\\Repository.csproj",
+        "projectName": "Repository",
+        "projectPath": "G:\\Angular\\BookAngular\\Back\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\aalwa\\.nuget\\packages\\",
-        "outputPath": "G:\\Angular\\BookAngular\\Api\\obj\\",
+        "outputPath": "G:\\Angular\\BookAngular\\Back\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aalwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,12 +39,6 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "dependencies": {
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[5.6.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -56,9 +50,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
