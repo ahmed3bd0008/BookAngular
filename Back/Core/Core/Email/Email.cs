@@ -1,8 +1,10 @@
+using Core.Shared;
+
 namespace Core.Email
 {
     public class Email:Entity
     {
-        public Name Email { get; set; }
+        public string EmailName { get; set; }
         
     }
 }
