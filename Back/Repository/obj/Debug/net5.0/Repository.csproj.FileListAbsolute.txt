@@ -1,0 +1,5 @@
+G:\Angular\BookAngular\Back\Repository\obj\Debug\net5.0\Repository.csproj.AssemblyReference.cache
+G:\Angular\BookAngular\Back\Repository\obj\Debug\net5.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+G:\Angular\BookAngular\Back\Repository\obj\Debug\net5.0\Repository.AssemblyInfoInputs.cache
+G:\Angular\BookAngular\Back\Repository\obj\Debug\net5.0\Repository.AssemblyInfo.cs
+G:\Angular\BookAngular\Back\Repository\obj\Debug\net5.0\Repository.csproj.CoreCompileInputs.cache

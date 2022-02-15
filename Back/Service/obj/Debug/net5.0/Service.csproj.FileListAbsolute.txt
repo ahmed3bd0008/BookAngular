@@ -1,0 +1,12 @@
+G:\Angular\BookAngular\Back\Service\bin\Debug\net5.0\Service.deps.json
+G:\Angular\BookAngular\Back\Service\bin\Debug\net5.0\Service.dll
+G:\Angular\BookAngular\Back\Service\bin\Debug\net5.0\ref\Service.dll
+G:\Angular\BookAngular\Back\Service\bin\Debug\net5.0\Service.pdb
+G:\Angular\BookAngular\Back\Service\obj\Debug\net5.0\Service.csproj.AssemblyReference.cache
+G:\Angular\BookAngular\Back\Service\obj\Debug\net5.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+G:\Angular\BookAngular\Back\Service\obj\Debug\net5.0\Service.AssemblyInfoInputs.cache
+G:\Angular\BookAngular\Back\Service\obj\Debug\net5.0\Service.AssemblyInfo.cs
+G:\Angular\BookAngular\Back\Service\obj\Debug\net5.0\Service.csproj.CoreCompileInputs.cache
+G:\Angular\BookAngular\Back\Service\obj\Debug\net5.0\Service.dll
+G:\Angular\BookAngular\Back\Service\obj\Debug\net5.0\ref\Service.dll
+G:\Angular\BookAngular\Back\Service\obj\Debug\net5.0\Service.pdb
