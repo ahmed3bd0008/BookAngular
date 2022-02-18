@@ -65,3 +65,9 @@ G:\Angular\BookAngular\Back\Api\bin\Debug\net5.0\Humanizer.dll
 G:\Angular\BookAngular\Back\Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 G:\Angular\BookAngular\Back\Api\bin\Debug\net5.0\Core.dll
 G:\Angular\BookAngular\Back\Api\bin\Debug\net5.0\Core.pdb
+G:\Angular\BookAngular\Back\Api\bin\Debug\net5.0\AutoMapper.dll
+G:\Angular\BookAngular\Back\Api\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+G:\Angular\BookAngular\Back\Api\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+G:\Angular\BookAngular\Back\Api\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+G:\Angular\BookAngular\Back\Api\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+G:\Angular\BookAngular\Back\Api\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll

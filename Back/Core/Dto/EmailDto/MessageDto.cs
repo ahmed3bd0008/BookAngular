@@ -13,6 +13,5 @@ namespace Core.Dto.EmailDto
     {
          public string MessageName { get; set; }
         public string Subject { get; set; }
-        public ICollection <addEmailDto>messageSended{ get; set; }
     }
 }

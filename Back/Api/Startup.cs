@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -10,7 +6,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Api.Extension;
-
+using AutoMapper;
 namespace Api
 {
     public class Startup
@@ -27,6 +23,7 @@ namespace Api
         {
 
             services.AddControllers();
+            services.AddAutoMapper(typeof(MapperConfiguration));
             services.ConnectedSql(_configuration);
             services.AddSwaggerGen(c =>
             {
