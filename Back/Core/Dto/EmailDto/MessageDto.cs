@@ -9,7 +9,7 @@ namespace Core.Dto.EmailDto
          public string MessageName { get; set; }
         public string Subject { get; set; }
     }
-    public class addMessageDto
+  public class addMessageDto
     {
          public string MessageName { get; set; }
         public string Subject { get; set; }

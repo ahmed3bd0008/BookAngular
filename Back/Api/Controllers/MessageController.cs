@@ -19,7 +19,7 @@ namespace Api.Controllers
             _logger = logger;
         }
         [HttpPost("AddMessage")]
-        public IActionResult AddMessage(addMessageDto addMessageDto ){
+        public IActionResult AddMessage([FromForm]addMessageDto addMessageDto ){
             return Ok();
         }
        
