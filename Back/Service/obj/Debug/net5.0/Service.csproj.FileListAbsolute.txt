@@ -10,3 +10,8 @@ G:\Angular\BookAngular\Back\Service\obj\Debug\net5.0\Service.csproj.CoreCompileI
 G:\Angular\BookAngular\Back\Service\obj\Debug\net5.0\Service.dll
 G:\Angular\BookAngular\Back\Service\obj\Debug\net5.0\ref\Service.dll
 G:\Angular\BookAngular\Back\Service\obj\Debug\net5.0\Service.pdb
+G:\Angular\BookAngular\Back\Service\bin\Debug\net5.0\Repository.dll
+G:\Angular\BookAngular\Back\Service\bin\Debug\net5.0\Repository.pdb
+G:\Angular\BookAngular\Back\Service\obj\Debug\net5.0\Service.csproj.CopyComplete
+G:\Angular\BookAngular\Back\Service\bin\Debug\net5.0\Core.dll
+G:\Angular\BookAngular\Back\Service\bin\Debug\net5.0\Core.pdb

@@ -1,34 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Api\\Api.csproj": {}
+    "G:\\Angular\\BookAngular\\Back\\Api\\Api.csproj": {}
   },
   "projects": {
-    "c:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Api\\Api.csproj": {
+    "G:\\Angular\\BookAngular\\Back\\Api\\Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Api\\Api.csproj",
+        "projectUniqueName": "G:\\Angular\\BookAngular\\Back\\Api\\Api.csproj",
         "projectName": "Api",
-        "projectPath": "c:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Api\\Api.csproj",
-        "packagesPath": "C:\\Users\\ahmedG\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Api\\obj\\",
+        "projectPath": "G:\\Angular\\BookAngular\\Back\\Api\\Api.csproj",
+        "packagesPath": "C:\\Users\\aalwa\\.nuget\\packages\\",
+        "outputPath": "G:\\Angular\\BookAngular\\Back\\Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ahmedG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aalwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "c:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Service\\Service.csproj": {
-                "projectPath": "c:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Service\\Service.csproj"
+              "G:\\Angular\\BookAngular\\Back\\Service\\Service.csproj": {
+                "projectPath": "G:\\Angular\\BookAngular\\Back\\Service\\Service.csproj"
               }
             }
           }
@@ -44,6 +45,22 @@
           "targetAlias": "net5.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.14, )"
             },
@@ -70,21 +87,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Repository\\Repository.csproj": {
+    "G:\\Angular\\BookAngular\\Back\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Repository\\Repository.csproj",
-        "projectName": "Repository",
-        "projectPath": "c:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\ahmedG\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Repository\\obj\\",
+        "projectUniqueName": "G:\\Angular\\BookAngular\\Back\\Core\\Core.csproj",
+        "projectName": "Core",
+        "projectPath": "G:\\Angular\\BookAngular\\Back\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\aalwa\\.nuget\\packages\\",
+        "outputPath": "G:\\Angular\\BookAngular\\Back\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ahmedG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aalwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -98,6 +115,64 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\Angular\\BookAngular\\Back\\Repository\\Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\Angular\\BookAngular\\Back\\Repository\\Repository.csproj",
+        "projectName": "Repository",
+        "projectPath": "G:\\Angular\\BookAngular\\Back\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\aalwa\\.nuget\\packages\\",
+        "outputPath": "G:\\Angular\\BookAngular\\Back\\Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\aalwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "G:\\Angular\\BookAngular\\Back\\Core\\Core.csproj": {
+                "projectPath": "G:\\Angular\\BookAngular\\Back\\Core\\Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -130,21 +205,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Service\\Service.csproj": {
+    "G:\\Angular\\BookAngular\\Back\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Service\\Service.csproj",
+        "projectUniqueName": "G:\\Angular\\BookAngular\\Back\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "c:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Service\\Service.csproj",
-        "packagesPath": "C:\\Users\\ahmedG\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Service\\obj\\",
+        "projectPath": "G:\\Angular\\BookAngular\\Back\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\aalwa\\.nuget\\packages\\",
+        "outputPath": "G:\\Angular\\BookAngular\\Back\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ahmedG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aalwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -158,8 +233,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "c:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Repository\\Repository.csproj": {
-                "projectPath": "c:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Repository\\Repository.csproj"
+              "G:\\Angular\\BookAngular\\Back\\Repository\\Repository.csproj": {
+                "projectPath": "G:\\Angular\\BookAngular\\Back\\Repository\\Repository.csproj"
               }
             }
           }
@@ -188,7 +263,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }
