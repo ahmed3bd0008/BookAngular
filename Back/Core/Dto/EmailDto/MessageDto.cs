@@ -11,7 +11,7 @@ namespace Core.Dto.EmailDto
     }
   public class addMessageDto
     {
-         public string MessageName { get; set; }
+       public string MessageName { get; set; }
         public string Subject { get; set; }
     }
 }

@@ -451,9 +451,16 @@ $RECYCLE.BIN/
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
-!.vscode/extensions.json
+!.vscode/extensions.json+
 *.pdb
 *.csproj.Assembly*
 *.dll
 Back/Api/obj/Debug/net5.0/Api.dll
 Back/Api/bin/Debug/net5.0/Api.dll
+Back/Api/bin/Debug/net5.0/Api.dll
+Back/Api/bin/Debug/net5.0/Api.pdb
+Back/Api/bin/Debug/net5.0/ref/Api.dll
+Back/Repository/obj/Debug/net5.0/Repository.csproj.AssemblyReference.cache
+*.dll
+*.pdb
+*.cache
