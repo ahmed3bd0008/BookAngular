@@ -5,10 +5,11 @@ namespace Service.Interface
 {
     public interface IMessageService
     {
-        Task<int>addMessageAsync(addMessageDto addMessageDto);
+        Task<int> addMessageAsync(addMessageDto addMessageDto);
         int addMessage(addMessageDto addMessageDto);
         int UpdateMassage(MessageDto messageDto);
-         int addEmail(addEmailDto addEmailDto);
+        int addEmail(addEmailDto addEmailDto);
+        Task<int> addEmailAsync(addEmailDto addEmailDto);
         int UpdateEmail(EmailDto EmailDto);
     }
 }

@@ -47,5 +47,10 @@ namespace Service.Implementation
         {
             throw new System.NotImplementedException();
         }
+
+        public Task<int> addEmailAsync(addEmailDto addEmailDto)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
