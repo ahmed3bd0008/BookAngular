@@ -13,13 +13,12 @@ namespace Api.Extension
     {
         public static void configurationRepository(this IServiceCollection services)
         {
-            
             services.AddScoped(typeof(IGenericRepstiory<>),typeof(GenericRepstiory<>));
             services.AddScoped(typeof(IUntityOfWork),typeof(UntityOfWork));
         }
          public static void configurationService(this IServiceCollection services)
         {
-             services.AddScoped(typeof(IMessageService),typeof(MessageService));
+            services.AddScoped(typeof(IMessageService),typeof(MessageService));
         }
     }
 }

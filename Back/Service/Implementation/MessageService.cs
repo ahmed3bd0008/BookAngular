@@ -20,8 +20,7 @@ namespace Service.Implementation
 
         public int addEmail(addEmailDto addEmailDto)
         {
-            Email email=new Email();
-            email.EmailName=addEmailDto.EmailName;
+             Email email=_mapper.Map<Email>(addEmailDto);
             _untityOfWork.EmailRepstiory.AddEntity(email);
             return _untityOfWork.save();
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Service\\Service.csproj": {}
+    "C:\\Users\\ahmedG\\Desktop\\project\\BookAngular\\Back\\Service\\Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Core\\Core.csproj": {
+    "C:\\Users\\ahmedG\\Desktop\\project\\BookAngular\\Back\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\ahmedG\\Desktop\\project\\BookAngular\\Back\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\ahmedG\\Desktop\\project\\BookAngular\\Back\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\ahmedG\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Core\\obj\\",
+        "outputPath": "C:\\Users\\ahmedG\\Desktop\\project\\BookAngular\\Back\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ahmedG\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,14 +58,14 @@
         }
       }
     },
-    "C:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Repository\\Repository.csproj": {
+    "C:\\Users\\ahmedG\\Desktop\\project\\BookAngular\\Back\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\ahmedG\\Desktop\\project\\BookAngular\\Back\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Repository\\Repository.csproj",
+        "projectPath": "C:\\Users\\ahmedG\\Desktop\\project\\BookAngular\\Back\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\ahmedG\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Repository\\obj\\",
+        "outputPath": "C:\\Users\\ahmedG\\Desktop\\project\\BookAngular\\Back\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ahmedG\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,8 +82,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Core\\Core.csproj"
+              "C:\\Users\\ahmedG\\Desktop\\project\\BookAngular\\Back\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\ahmedG\\Desktop\\project\\BookAngular\\Back\\Core\\Core.csproj"
               }
             }
           }
@@ -122,14 +122,14 @@
         }
       }
     },
-    "C:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Service\\Service.csproj": {
+    "C:\\Users\\ahmedG\\Desktop\\project\\BookAngular\\Back\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Service\\Service.csproj",
+        "projectUniqueName": "C:\\Users\\ahmedG\\Desktop\\project\\BookAngular\\Back\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "C:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Service\\Service.csproj",
+        "projectPath": "C:\\Users\\ahmedG\\Desktop\\project\\BookAngular\\Back\\Service\\Service.csproj",
         "packagesPath": "C:\\Users\\ahmedG\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Service\\obj\\",
+        "outputPath": "C:\\Users\\ahmedG\\Desktop\\project\\BookAngular\\Back\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ahmedG\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -146,8 +146,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Repository\\Repository.csproj"
+              "C:\\Users\\ahmedG\\Desktop\\project\\BookAngular\\Back\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\ahmedG\\Desktop\\project\\BookAngular\\Back\\Repository\\Repository.csproj"
               }
             }
           }

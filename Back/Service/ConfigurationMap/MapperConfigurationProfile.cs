@@ -4,9 +4,9 @@ using  Core.Email;
 
 namespace Service.ConfigurationMap
 {
-    public class MapperConfiguration:Profile
+    public class MapperConfigurationProfile:Profile
     {
-        public MapperConfiguration()
+        public MapperConfigurationProfile()
         {
             CreateMap<Email,addEmailDto>().ReverseMap();
             CreateMap<Email,EmailDto>().ReverseMap();

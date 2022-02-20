@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1jVCHYVo1BYTkwOP0h4HNMxmqP6gtXbGdJ+ToUBqPgmtCjjJXD99NqRaeH3ctOLyYX5B4niVFeypJGOGqxOeVA==",
+  "dgSpecHash": "WdkvwpwCr+ZBhxvFPT1fhLJ7ix+TgS0jdwcUKwqAygzFtIL8okkFR4cC56sTTZxtt4uNE2fWry1uaTJly19/3w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ahmedG\\Desktop\\project\\Booksangular\\BookAngular\\Back\\Api\\Api.csproj",
+  "projectFilePath": "C:\\Users\\ahmedG\\Desktop\\project\\BookAngular\\Back\\Api\\Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ahmedG\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\ahmedG\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

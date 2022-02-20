@@ -3,10 +3,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Api.Extension;
-using AutoMapper;
+using Service.ConfigurationMap;
 namespace Api
 {
     public class Startup
@@ -30,7 +29,7 @@ namespace Api
             });
              services.configurationRepository();
              services.configurationService();
-              services.AddAutoMapper(typeof(MapperConfiguration));
+              services.AddAutoMapper(typeof(MapperConfigurationProfile));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
