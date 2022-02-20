@@ -6157,19 +6157,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ahmedG\\.nuget\\packages\\": {}
+    "C:\\Users\\aalwa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ahmedG\\Desktop\\project\\BookAngular\\Back\\Api\\Api.csproj",
+      "projectUniqueName": "G:\\Angular\\BookAngular\\Back\\Api\\Api.csproj",
       "projectName": "Api",
-      "projectPath": "C:\\Users\\ahmedG\\Desktop\\project\\BookAngular\\Back\\Api\\Api.csproj",
-      "packagesPath": "C:\\Users\\ahmedG\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ahmedG\\Desktop\\project\\BookAngular\\Back\\Api\\obj\\",
+      "projectPath": "G:\\Angular\\BookAngular\\Back\\Api\\Api.csproj",
+      "packagesPath": "C:\\Users\\aalwa\\.nuget\\packages\\",
+      "outputPath": "G:\\Angular\\BookAngular\\Back\\Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ahmedG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aalwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6183,8 +6183,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\ahmedG\\Desktop\\project\\BookAngular\\Back\\Service\\Service.csproj": {
-              "projectPath": "C:\\Users\\ahmedG\\Desktop\\project\\BookAngular\\Back\\Service\\Service.csproj"
+            "G:\\Angular\\BookAngular\\Back\\Service\\Service.csproj": {
+              "projectPath": "G:\\Angular\\BookAngular\\Back\\Service\\Service.csproj"
             }
           }
         }
@@ -6246,7 +6246,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }

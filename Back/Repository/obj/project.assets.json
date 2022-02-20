@@ -543,19 +543,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ahmedG\\.nuget\\packages\\": {}
+    "C:\\Users\\aalwa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ahmedG\\Desktop\\project\\BookAngular\\Back\\Repository\\Repository.csproj",
+      "projectUniqueName": "G:\\Angular\\BookAngular\\Back\\Repository\\Repository.csproj",
       "projectName": "Repository",
-      "projectPath": "C:\\Users\\ahmedG\\Desktop\\project\\BookAngular\\Back\\Repository\\Repository.csproj",
-      "packagesPath": "C:\\Users\\ahmedG\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ahmedG\\Desktop\\project\\BookAngular\\Back\\Repository\\obj\\",
+      "projectPath": "G:\\Angular\\BookAngular\\Back\\Repository\\Repository.csproj",
+      "packagesPath": "C:\\Users\\aalwa\\.nuget\\packages\\",
+      "outputPath": "G:\\Angular\\BookAngular\\Back\\Repository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ahmedG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aalwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -569,8 +569,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\ahmedG\\Desktop\\project\\BookAngular\\Back\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\ahmedG\\Desktop\\project\\BookAngular\\Back\\Core\\Core.csproj"
+            "G:\\Angular\\BookAngular\\Back\\Core\\Core.csproj": {
+              "projectPath": "G:\\Angular\\BookAngular\\Back\\Core\\Core.csproj"
             }
           }
         }
@@ -605,7 +605,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }

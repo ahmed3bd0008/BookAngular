@@ -7,8 +7,13 @@ namespace Core.Dto.EmailDto
         public Guid Id { get; set; }
         public string EmailName { get; set; }
     }
-     public class addEmailDto
+    public class addEmailDto
     {
         public string EmailName { get; set; }
+    }
+    public class addEmailMessageDto
+    {
+        public string EmailName { get; set; }
+        public Guid MessageId { get; set; }
     }
 }

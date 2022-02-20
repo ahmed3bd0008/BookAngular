@@ -14,4 +14,9 @@ namespace Core.Dto.EmailDto
        public string MessageName { get; set; }
         public string Subject { get; set; }
     }
+ public class SendMessageEmailsDto
+ {
+     public Guid MessageId { get; set; }
+     public List<addEmailDto> EmailsDto { get; set; }
+ }
 }

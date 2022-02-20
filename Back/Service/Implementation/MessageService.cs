@@ -1,9 +1,12 @@
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using Core.Dto.EmailDto;
 using Core.Email;
 using Repository.Interface;
 using Service.Interface;
+using Service.Response;
 
 namespace Service.Implementation
 {
@@ -18,39 +21,77 @@ namespace Service.Implementation
             _mapper=mapper;
         }
 
-        public int addEmail(addEmailDto addEmailDto)
+        public ResponseService< int> addEmail(addEmailDto addEmailDto)
         {
              Email email=_mapper.Map<Email>(addEmailDto);
             _untityOfWork.EmailRepstiory.AddEntity(email);
-            return _untityOfWork.save();
+             return  new ResponseService<int>(){Data= _untityOfWork.save()};
         }
-
-        public int UpdateEmail(EmailDto messageDto)
+        public ResponseService< int> UpdateEmail(EmailDto messageDto)
+        {
+            throw new System.NotImplementedException();
+        }
+          public ResponseService<List<MessageDto>> GetMessage()
         {
             throw new System.NotImplementedException();
         }
 
-
-
-        public int addMessage(addMessageDto addMessageDto)
+        public ResponseService< int> addMessage(addMessageDto addMessageDto)
         {
             Message message=_mapper.Map<Message>(addMessageDto);
             _untityOfWork.MessageRepstiory.AddEntity(message);
-            return _untityOfWork.save();
+            return  new ResponseService<int>(){Data= _untityOfWork.save()};
         }
-        public Task<int> addMessageAsync(addMessageDto addMessageDto)
+        async Task<ResponseService<int>> IMessageService.addMessageAsync(addMessageDto addMessageDto)
+        {
+             Message message=_mapper.Map<Message>(addMessageDto);
+              await  _untityOfWork.MessageRepstiory.AddEntityAsync(message);
+            return  new ResponseService<int>(){Data=await _untityOfWork.saveAsync()};
+        }
+        public ResponseService< int >UpdateMassage(MessageDto messageDto)
+        {
+            throw new System.NotImplementedException();
+        }
+          public ResponseService<List<EmailDto>> GetEmail()
+        {
+            throw new System.NotImplementedException();
+        }
+        public Task< ResponseService<int> >addEmailAsync(addEmailDto addEmailDto)
         {
             throw new System.NotImplementedException();
         }
 
-        public int UpdateMassage(MessageDto messageDto)
+    public async Task< ResponseService<int>>SendMessageToEmail(SendMessageEmailsDto sendMessageEmailsDto)
+    {
+        Message  message=_untityOfWork.MessageRepstiory.getEntityById(sendMessageEmailsDto.MessageId);
+        if(sendMessageEmailsDto.EmailsDto.Count>0)
         {
-            throw new System.NotImplementedException();
+            foreach (var item in sendMessageEmailsDto.EmailsDto)
+            {
+              List<Email> existEmail= await  _untityOfWork.EmailRepstiory.
+                            getEntityAsync(d=>d.EmailName.Trim().ToUpper()==item.EmailName.Trim().ToUpper(),false);
+               if(existEmail==null||existEmail.Count<=0)
+               {
+                     var addEmail=_mapper.Map<Email>(item);
+                     addEmail.messageSended.Add(new MessageSended(){MessageId=message.Id});
+                     await _untityOfWork.EmailRepstiory.AddEntityAsync(addEmail); 
+               }
+               else
+               {
+                  var email=  existEmail.FirstOrDefault();
+                  email.messageSended.Add(new MessageSended(){MessageId=message.Id});
+                    _untityOfWork.EmailRepstiory.updateEntity(email);
+               }
+            }
+             await  _untityOfWork.saveAsync();
         }
+        else{
+            return new ResponseService<int>(){Message="Thier Is no Email To send"};
+        }
+        return new ResponseService<int>(){};
+    }
 
-        public Task<int> addEmailAsync(addEmailDto addEmailDto)
-        {
-            throw new System.NotImplementedException();
-        }
+      
+      
     }
 }
