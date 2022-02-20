@@ -23,7 +23,6 @@ namespace Api
         {
 
             services.AddControllers();
-            services.AddAutoMapper(typeof(MapperConfiguration));
             services.ConnectedSql(_configuration);
             services.AddSwaggerGen(c =>
             {
@@ -31,6 +30,7 @@ namespace Api
             });
              services.configurationRepository();
              services.configurationService();
+              services.AddAutoMapper(typeof(MapperConfiguration));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

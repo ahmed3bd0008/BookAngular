@@ -15,8 +15,7 @@ namespace Api.Controllers
     {
         private readonly ILogger<MessageController> _logger;
         private readonly IMessageService _messageService;
-
-        public MessageController(ILogger<MessageController> logger,IMessageService messageService)
+       public MessageController(ILogger<MessageController> logger,IMessageService messageService)
         {
             _logger = logger;
             _messageService=messageService;
@@ -27,7 +26,13 @@ namespace Api.Controllers
         }
         [HttpPost("AddMessage")]
         public IActionResult AddMessage([FromForm]addMessageDto addMessageDto ){
+
             return Ok(_messageService.addMessage(addMessageDto));
+        }
+          [HttpPost("AddEmail")]
+        public IActionResult AddEmail([FromForm]addEmailDto addEmailDto ){
+
+            return Ok(_messageService.addEmail(addEmailDto));
         }
        
     }
