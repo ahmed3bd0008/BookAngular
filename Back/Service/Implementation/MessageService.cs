@@ -33,7 +33,7 @@ namespace Service.Implementation
         }
           public ResponseService<List<MessageDto>> GetMessage()
         {
-            throw new System.NotImplementedException();
+            return new ResponseService<List<MessageDto>>(){Data=_untityOfWork.MessageRepstiory.getEntity(false)};
         }
 
         public ResponseService< int> addMessage(addMessageDto addMessageDto)
@@ -54,7 +54,7 @@ namespace Service.Implementation
         }
           public ResponseService<List<EmailDto>> GetEmail()
         {
-            throw new System.NotImplementedException();
+           return new ResponseService<List<MessageDto>>(){Data=_untityOfWork.EmailRepstiory.getEntity(false)};
         }
         public Task< ResponseService<int> >addEmailAsync(addEmailDto addEmailDto)
         {
