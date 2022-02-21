@@ -22,7 +22,7 @@ namespace Api.Controllers
         }
         [HttpGet("GetAllMessage")]
         public IActionResult GetAllMessage(){
-            return Ok(_messageService.GetAllMessage());
+            return Ok(_messageService.GetMessage());
         }
         [HttpPost("AddMessage")]
         public IActionResult AddMessage([FromForm]addMessageDto addMessageDto ){
@@ -36,7 +36,7 @@ namespace Api.Controllers
         }
          [HttpGet("GetAllEmail")]
         public IActionResult GetAllEmail(){
-            return Ok(_messageService.GetAllEmail());
+            return Ok(_messageService.GetEmail());
         }
        
     }

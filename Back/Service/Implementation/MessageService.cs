@@ -33,7 +33,9 @@ namespace Service.Implementation
         }
           public ResponseService<List<MessageDto>> GetMessage()
         {
-            return new ResponseService<List<MessageDto>>(){Data=_untityOfWork.MessageRepstiory.getEntity(false)};
+            var message=_untityOfWork.MessageRepstiory.getEntity(false);
+            var messageDto=_mapper.Map<List<MessageDto>>(message);
+            return new ResponseService<List<MessageDto>>(){Data=messageDto};
         }
 
         public ResponseService< int> addMessage(addMessageDto addMessageDto)
@@ -54,7 +56,9 @@ namespace Service.Implementation
         }
           public ResponseService<List<EmailDto>> GetEmail()
         {
-           return new ResponseService<List<MessageDto>>(){Data=_untityOfWork.EmailRepstiory.getEntity(false)};
+            var email=_untityOfWork.EmailRepstiory.getEntity(false);
+            var emailDto=_mapper.Map<List<EmailDto>>(email);
+            return new ResponseService<List<EmailDto>>(){Data=emailDto};
         }
         public Task< ResponseService<int> >addEmailAsync(addEmailDto addEmailDto)
         {
